@@ -117,6 +117,12 @@ void grab_command(std::string request_to_base , SOCKET sock_of_current_user) {
 				spaces.clear();
 				method_SET(request_to_base, sock_of_current_user);
 			}
+			if (command == spaces + "get" && command_executed != true) {
+				std::cout << "set ::" << std::endl;
+				command_executed = true;
+				spaces.clear();
+				method_GET(request_to_base, sock_of_current_user);
+			}
 		}
 	}
 	/*
