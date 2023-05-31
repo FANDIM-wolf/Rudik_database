@@ -2,7 +2,7 @@
 #pragma comment(lib, "ws2_32.lib")
 #include <winsock2.h>
 #include <iostream>
-
+//add libraries for Linux
 #pragma warning(disable: 4996)
 
 SOCKET Connection;
